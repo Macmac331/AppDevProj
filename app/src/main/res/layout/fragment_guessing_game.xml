@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".GuessingGame">
+
+        <TextView
+            android:layout_marginTop="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Guessing Game"
+            android:textSize="35sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+    <TextView
+        android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Can you guess the magic number 1-99?"
+            android:textSize="18sp"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:id="@+id/correctNumber"
+        />
+    <EditText
+        android:id="@+id/userGuess"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your guess here"
+        android:inputType="number"
+        android:textSize="18sp"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnGuess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter"/>
+
+</LinearLayout>
